@@ -1,25 +1,31 @@
 ---
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MapPin, Facebook, Twitter, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { ModeToggle } from "./ModeToggle";
+import MobileMenu from "./MobileMenu";
 ---
 
-<header class="bg-primary relative h-22 text-white">
-  <div class="mx-auto flex w-[90%] max-w-[1440px] flex-col dark:text-black">
-    <div class="flex items-center justify-between gap-2 p-2">
-      <div class="flex items-center space-x-2">
-        <MapPin className="h-4 w-4" />
-        <a href="#">​Оренбург, Шарлыкское шоссе, 1 к2, 116 офис; 460019</a>
+<header class="bg-primary h-22 text-white">
+  <div class="mx-auto flex w-[90%] max-w-[1440px] flex-col">
+    <div
+      class="flex items-center justify-end gap-1 py-2 text-sm sm:justify-end md:justify-between lg:gap-2 lg:text-base"
+    >
+      <div class="hidden items-center gap-1 md:flex lg:gap-2">
+        <MapPin className="h-4 w-4 lg:h-6 lg:w-6" />
+        <a href="#213">​Оренбург, Шарлыкское шоссе, 1 к2, 116 офис; 460019</a>
       </div>
-      <div class="flex gap-2">
-        <p>Свяжитесь с нами</p>
-        <div class="flex items-center space-x-2">
-          <Mail className="h-4 w-4" />
+      <div class="flex gap-1 lg:gap-4">
+        <p class="hidden xl:block">Свяжитесь с нами:</p>
+        <div class="flex items-center gap-1 lg:gap-2">
+          <Mail className="h-4 w-4 lg:h-6 lg:w-6" />
           <a href="mailto:gexpress@mail.ru">gexpress@mail.ru</a>
         </div>
-        <div class="flex items-center space-x-2">
-          <Phone className="h-4 w-4" />
+        <div class="flex items-center gap-1 lg:gap-2">
+          <Phone className="h-4 w-4 lg:h-6 lg:w-6" />
           <a href="tel:8-800-555-35-35">8-800-555-35-35</a>
+        </div>
+        <div>
+          <ModeToggle client:load />
         </div>
       </div>
     </div>
@@ -27,32 +33,35 @@ import { ModeToggle } from "./ModeToggle";
       class="bg-secondary z-10 flex h-24 items-center rounded-md px-4 text-black dark:text-white"
     >
       <div class="flex w-full items-center justify-between">
-        <div class="text-2xl font-bold">
-          Global Express<span class="text-red-300">.</span>
+        <div
+          class="text-[1.75rem] leading-none font-bold md:text-[1.5rem] lg:text-[2.25rem]"
+        >
+          Global Express
         </div>
 
-        <nav class="hidden items-center space-x-8 md:flex">
-          <a href="#" class="transition-colors hover:text-red-200"> Home </a>
-          <a href="#" class="transition-colors hover:text-red-200">
-            About Us
-          </a>
-          <a href="#" class="transition-colors hover:text-red-200">
-            Services
-          </a>
-          <a href="#" class="transition-colors hover:text-red-200"> News </a>
-          <a href="#" class="transition-colors hover:text-red-200">
-            Track Orders
-          </a>
+        <nav class="hidden text-sm font-medium md:block lg:text-base">
+          <ul class="flex items-center gap-4 lg:gap-8">
+            <li>
+              <a href="#services" class="hover:underline">Услуги</a>
+            </li>
+            <li>
+              <a href="#about" class="hover:underline">О нас</a>
+            </li>
+            <li>
+              <a href="#useful" class="hover:underline">Полезное</a>
+            </li>
+            <li>
+              <a href="#contacts" class="hover:underline">Контакты</a>
+            </li>
+          </ul>
         </nav>
-        <div class="flex items-center gap-4">
-          <ModeToggle client:load />
-          <Button
-            variant="outline"
-            className="border-white bg-white text-red-700 hover:bg-red-50"
-          >
-            Track Order →
+
+        <div class="hidden items-center gap-4 md:flex">
+          <Button variant="outline" className="hover:cursor-pointer">
+            Отследить посылку →
           </Button>
         </div>
+        <MobileMenu client:load />
       </div>
     </div>
   </div>
