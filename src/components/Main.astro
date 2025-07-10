@@ -2,23 +2,28 @@
 import { Button } from "@/components/ui/button";
 ---
 
-<main class="bg-[url(/bg2.webp)] bg-cover bg-center lg:py-52">
-  <div class="mx-auto w-[90%] max-w-[1240px]">
-    <div class="flex w-[50%] min-w-[450px] flex-col gap-8 text-white">
-      <h1 class="text-4xl leading-tight font-bold tracking-wide uppercase">
+<main class="bg-[url(/bg2.webp)] bg-cover bg-center py-24 sm:py-32 lg:py-42">
+  <div
+    class="mx-auto w-[90%] max-w-[1240px] rounded-lg bg-white/12 p-4 backdrop-blur-md sm:bg-transparent sm:backdrop-blur-none"
+  >
+    <div
+      class="flex w-[50%] min-w-[300px] flex-col gap-4 text-white sm:min-w-[450px] lg:gap-8"
+    >
+      <h1
+        class="text-xl leading-tight font-bold tracking-wide uppercase sm:text-3xl lg:text-4xl"
+      >
         <span class="text-chart-1">Надежные</span> курьерские услуги с максимально
         <span class="text-chart-1">быстрой</span>
         доставкой
       </h1>
-      <p class="w-[80%] text-lg font-semibold">
+      <p class="w-[80%] font-semibold lg:text-lg">
         Наша разветвленная курьерская служба обеспечит быструю доставку срочных
         документов, товаров и покупок, которые вдруг стали необходимы в
         определенном месте в конкретное время.
       </p>
-      <Button className="w-42 cursor-pointer dark:text-white">
-        <a class="" href="#12">Офромить заявку →</a>
+      <Button className="w-42 dark:text-white">
+        <a href="#12">Офромить заявку</a>
       </Button>
     </div>
   </div>
-  <div></div>
 </main>

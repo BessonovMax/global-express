@@ -4,8 +4,12 @@ import "../styles/global.css";
 // Component Imports
 
 import MainLayout from "@/layouts/MainLayout.astro";
+import AboutSection from "@/components/AboutSection.astro";
+import ShippingCalculator from "@/components/ShippingCalculator";
 ---
 
 <MainLayout title="Global Express">
   <Main />
+  <AboutSection />
+  <ShippingCalculator client:idle />
 </MainLayout>
