@@ -47,7 +47,7 @@ export default function ShippingCalculator() {
           </Button>
         </div>
       </div>
-      <div className="hidden w-[40%] rounded-md bg-[url(/bg-calc.webp)] bg-cover bg-center md:block"></div>
+      <div className="hidden w-[40%] rounded-md bg-[url(/global-express/bg-calc.webp)] bg-cover bg-center md:block"></div>
     </form>
   );
 }
