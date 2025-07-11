@@ -34,7 +34,7 @@ export default function ShippingCalculator() {
             checked={receiverPays}
             onCheckedChange={setReceiverPays}
           />
-          <Label htmlFor="receiverPays">
+          <Label htmlFor="receiverPays" className="">
             Отметьте, если отправление оплачивает получатель
           </Label>
         </div>
@@ -47,7 +47,7 @@ export default function ShippingCalculator() {
           </Button>
         </div>
       </div>
-      <div className="hidden w-[40%] rounded-md bg-[url(/bg-calc.jpg)] bg-cover bg-center md:block"></div>
+      <div className="hidden w-[40%] rounded-md bg-[url(/bg-calc.webp)] bg-cover bg-center md:block"></div>
     </form>
   );
 }

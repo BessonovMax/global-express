@@ -36,6 +36,11 @@ export default function MobileSidebar() {
           <nav className="font-medium">
             <ul className="flex flex-col items-start gap-4 lg:gap-8">
               <li>
+                <a href="/" className="hover:underline">
+                  Главная
+                </a>
+              </li>
+              <li>
                 <a href="services" className="hover:underline">
                   Услуги
                 </a>
@@ -43,11 +48,6 @@ export default function MobileSidebar() {
               <li>
                 <a href="about" className="hover:underline">
                   О нас
-                </a>
-              </li>
-              <li>
-                <a href="useful" className="hover:underline">
-                  Полезное
                 </a>
               </li>
               <li>

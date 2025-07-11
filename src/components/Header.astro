@@ -8,7 +8,7 @@ import MobileMenu from "./MobileMenu";
 <header class="bg-primary h-22 text-white">
   <div class="mx-auto flex w-[90%] max-w-[1440px] flex-col">
     <div
-      class="flex items-center justify-end gap-1 py-2 text-sm sm:justify-end md:justify-between lg:gap-2 lg:text-base"
+      class="flex items-center justify-end gap-1 py-3 text-sm sm:justify-end md:justify-between lg:gap-2 lg:text-base"
     >
       <div class="hidden items-center gap-1 md:flex lg:gap-2">
         <MapPin className="h-4 w-4 lg:h-6 lg:w-6" />
@@ -24,13 +24,12 @@ import MobileMenu from "./MobileMenu";
           <Phone className="h-4 w-4 lg:h-6 lg:w-6" />
           <a href="tel:8-800-555-35-35">8-800-555-35-35</a>
         </div>
-        <div>
-          <ModeToggle client:load />
-        </div>
+
+        <ModeToggle client:load />
       </div>
     </div>
     <div
-      class="bg-background z-10 flex h-24 items-center rounded-md px-4 text-black dark:text-white"
+      class="bg-background z-10 flex h-20 items-center rounded-md px-4 text-black dark:text-white"
     >
       <div class="flex w-full items-center justify-between">
         <div
@@ -42,14 +41,15 @@ import MobileMenu from "./MobileMenu";
         <nav class="hidden text-sm font-medium md:block lg:text-base">
           <ul class="flex items-center gap-4 lg:gap-8">
             <li>
+              <a href="/" class="hover:underline">Главная</a>
+            </li>
+            <li>
               <a href="services" class="hover:underline">Услуги</a>
             </li>
             <li>
               <a href="about" class="hover:underline">О нас</a>
             </li>
-            <li>
-              <a href="useful" class="hover:underline">Полезное</a>
-            </li>
+
             <li>
               <a href="contacts" class="hover:underline">Контакты</a>
             </li>
