@@ -36,22 +36,22 @@ export default function MobileSidebar() {
           <nav className="font-medium">
             <ul className="flex flex-col items-start gap-4 lg:gap-8">
               <li>
-                <a href="/" className="hover:underline">
+                <a href="/global-express/" className="hover:underline">
                   Главная
                 </a>
               </li>
               <li>
-                <a href="services" className="hover:underline">
+                <a href="/global-express/services" className="hover:underline">
                   Услуги
                 </a>
               </li>
               <li>
-                <a href="about" className="hover:underline">
+                <a href="/global-express/about" className="hover:underline">
                   О нас
                 </a>
               </li>
               <li>
-                <a href="contacts" className="hover:underline">
+                <a href="/global-express/contacts" className="hover:underline">
                   Контакты
                 </a>
               </li>
