@@ -5,11 +5,14 @@ import "../styles/global.css";
 
 import MainLayout from "@/layouts/MainLayout.astro";
 import AboutSection from "@/components/AboutSection.astro";
-import ShippingCalculator from "@/components/ShippingCalculator";
+import ShippingCalculator from "@/components/calculator/ShippingCalculator";
+import CalculatorSection from "@/components/calculator/CalculatorSection.astro";
+import Footer from "@/components/Footer.astro";
 ---
 
 <MainLayout title="Global Express">
   <Main />
   <AboutSection />
-  <ShippingCalculator client:idle />
+  <CalculatorSection />
+  <Footer />
 </MainLayout>

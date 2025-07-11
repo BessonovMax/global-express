@@ -1,0 +1,19 @@
+---
+import ShippingCalculator from "./ShippingCalculator";
+---
+
+<section
+  class="bg-muted text-foreground flex flex-col items-center gap-6 py-12"
+>
+  <div class="border-primary rounded-md border-2 p-2 font-semibold">
+    Узнайте стоимость отправки
+  </div>
+  <h2 class="text-center text-3xl font-bold">
+    Калькулятор стоимости отправления
+  </h2>
+  <div
+    class="bg-background w-[90%] max-w-[1240px] space-y-8 rounded-lg p-6 shadow-md"
+  >
+    <ShippingCalculator client:idle />
+  </div>
+</section>

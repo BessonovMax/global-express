@@ -1,0 +1,65 @@
+---
+import { MapPin, Mail, Phone } from "lucide-react";
+---
+
+<footer class="bg-ring m-6 rounded-md p-14">
+  <div
+    class="mx-auto flex max-w-[1240px] flex-col gap-10 md:flex-row md:justify-between"
+  >
+    {/* Company Info */}
+    <div class="max-w-sm space-y-4">
+      <h2 class="text-2xl font-bold text-white">Global Express</h2>
+      <p class="text-sm leading-relaxed text-white/80">
+        Мы помогаем компаниям превратить доставку в эффективный процесс — от
+        отслеживания до получения. Global Express — надёжная логистика под ключ.
+      </p>
+      <ul class="space-y-2 text-sm text-white/80">
+        <li class="flex items-center gap-2">
+          <MapPin className="h-4 w-4" />
+          г. Оренбург, Шарлыкское шоссе, 1 к2, офис 116
+        </li>
+        <li class="flex items-center gap-2">
+          <Mail className="h-4 w-4" />
+          <a href="mailto:gexpress@mail.ru">gexpress@mail.ru</a>
+        </li>
+        <li class="flex items-center gap-2">
+          <Phone className="h-4 w-4" />
+          <a href="tel:+78005553535">8-800-555-35-35</a>
+        </li>
+      </ul>
+    </div>
+
+    {/* Navigation Links */}
+    <div class="grid grid-cols-2 gap-8 text-sm md:grid-cols-3">
+      <div>
+        <h3 class="mb-4 font-semibold text-white">Разделы</h3>
+        <ul class="space-y-2 text-white/80">
+          <li><a href="/">Главная</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#about">О нас</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="mb-4 font-semibold text-white">Решения</h3>
+        <ul class="space-y-2 text-white/80">
+          <li><a href="#air">Авиа доставка</a></li>
+          <li><a href="#ocean">Морские перевозки</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="mb-4 font-semibold text-white">Юридическая информация</h3>
+        <ul class="space-y-2 text-white/80">
+          <li><a href="/terms">Условия использования</a></li>
+          <li><a href="/privacy">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  {/* Copyright */}
+  <div
+    class="mt-10 border-t border-white/20 pt-4 text-center text-xs text-white/60"
+  >
+    &copy; {new Date().getFullYear()} Global Express. Все права защищены.
+  </div>
+</footer>
